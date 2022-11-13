@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* ===============  COLOURS  =============== */
+    --color-primary: hsl(179, 62%, 43%);
+    --color-primary-alt: hsl(71, 73%, 54%);
+    --color-secondary: hsl(183, 78%, 43%);
+    --color-text: hsl(204, 43%, 93%);
+    --color-text-opac: hsla(203, 44%, 93%, 0.5);
+    --color-text-alt: hsl(218, 22%, 67%);
+
+    /* ===============  FONTS / TOPOGRAPHY  =============== */
+    /* 1rem = 16px */
+    --main-font: 'Karla', sans-serif;
+    --fs-big: 2.5rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1.25rem;
+    --fs-h4: 1.125rem;
+    --fs-regular: 1rem;
+    --fs-small: .688rem;   
+    --ff-regular: 400;
+    --ff-bold: 700;
+}
+
+/* ===============  RESET  =============== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: var(--fs-regular);
+}
+
+body,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font: inherit;
+}
+
+
+/* ===============  GENERAL STYLING  =============== */
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+p {
+    font-size: var(--ff-regular);
+    line-height: 2rem;
+}
+
+/* ===============  SECTION GRID  =============== */
+
+.grid {
+    display: grid;
+}
+
+.container {
+    padding: 2rem;
+}
+
+/* ===============  COMMUNITY SECTION  =============== */
+
+.community-section {
+    background-color: #FFF;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.community-section h2 {
+    color: var(--color-primary);
+    padding-bottom: 2rem;
+}
+
+.community-section h4 {
+    color: var(--color-primary-alt);
+    padding-bottom: 1.5rem;
+}
+
+.community-section p {
+    color: var(--color-text-alt);
+    line-height: 2rem;
+}
+
+/* ===============  SUBSCRIPTION SECTION  =============== */
+
+.subscription-section {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.subscription-section h3 {
+    padding-bottom: 1.5rem;
+}
+
+.access {
+    font-size: var(--fs-h4);
+    padding-bottom: 2rem;
+}
+
+.price-wrapper {
+    color: var(--color-text-opac);
+    display: flex;
+    gap: 1rem;
+    align-items: center;;
+}
+
+.price {
+    color: var(--color-text);
+    font-size: var(--fs-big);
+    font-weight: var(--ff-bold);
+    
+}
+
+.button-wrapper {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.button {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    color: #fff;
+    font-weight: var(--ff-bold);
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color-primary-alt);
+    border-radius: .3rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--color-primary-alt);
+    background-color: #fff;
+}
+
+/* ===============  SUBSCRIPTION SECTION  =============== */
+
+/* ===============  ATTRIBUTION  =============== */
+
+.attribution {
+    font-size: var(--fs-small);
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
